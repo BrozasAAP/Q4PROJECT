@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Project</title>
+    <style>
+        body{
+            background: #D3CCE3;  
+            background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
+            background: linear-gradient(to right, #E9E4F0, #D3CCE3); 
+
+        }
+        button{
+            width: fit-content;
+            margin: 5px;
+            border-color: #fff;
+            border-radius: 2px;
+        }
+
+        a:hover{
+            opacity: 0.7;
+        }
+
+        button:hover{
+            opacity: .5;
+        }
+
+        .header-img{
+            width: 100%;
+            position: absolute;
+        }
+
+        .header-main {
+            position: sticky;
+            background-color: rgb(255, 211, 255);
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-main a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #ff65b2;
+        }
+
+        .search {
+            margin-left: auto; 
+        }
+
+        #logo-img { 
+            width: 350px;
+            height: 100px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .header {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 15px;
+            font-size: x-large;
+            background-color: #fff;
+            height: 80px;
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .intro{
+            width: 1310px;
+            height: 100px;
+            padding: 10px;
+            margin: 0 auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .c-content{
+            width:410px;
+            height:290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            background-color: #fff;
+        }
+
+        .c-title{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .c-text{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #c-img{
+            width: 410px;
+            height: 290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+        }
+
+        .b-content{
+            width:410px;
+            height:290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            background-color: #fff;
+        }
+
+        .b-title{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .b-text{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #b-img{
+            width: 410px;
+            height: 290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+        }
+
+        #c-img{
+            width: 410px;
+            height: 290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+        }
+
+        .p-content{
+            width:410px;
+            height:290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            background-color: #fff;
+
+        }
+
+        .p-title{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .p-text{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #p-img{
+            width: 410px;
+            height: 290px;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+            box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(158,158,158,0.75);
+        }
+
+        .footer{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:x-small;
+            text-align: left;
+        }
+
+        .footer1 {
+            background-color: rgb(255, 211, 255);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        .footer1 p {
+            color: #ff65b2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header-main">
+        <div class="nav">
+            <a href="https://github.com/BrozasAAP" class="navbar-brand"><img src="https://i.imgur.com/4CpUQgm.png" width="50" height="40" alt="logo"></a>
+        </div>
+        <a href="mainpage.html">home</a>
+        <a href="page2.html">first quarter project</a>
+        <a href="page3.html">second quarter project</a>
+        <a href="page4.html">third quarter project</a>
+        <a href="page5.html">what's next?</a>
+        <input class="search" type="search" placeholder="search">
+        <button>go</button>
+    </div>
+    <div class="Q2-PROJ" id="Q2-PROJ">
+        <div class="PROJ-1" id="PROJ-1">
+            <div class="logo">
+                <img id="logo-img" src="https://i.imgur.com/WaSI1OL.png">
+            </div>
+    
+            <div class="header">
+                <p>PHOTO GALLERY</p>
+            </div>
+    
+            <br>
+    
+            <div class="intro">
+                <p>The Philippines and picture-perfect beaches go together like a bucket and spade. The country is made up of more than 7000 islands, and almost all of them boast at least one stretch of pristine golden sand with iconic bangka boats bobbing in shallow teal waters offshore.  With its extensive coastline, the country offers the best of island beaches, white sand blue water teeming with marine life, corals and lush foliage. The Philippines is blessed with a moderate climate making it an ideal sun holiday destination.
+                </p>
+            </div>
+    
+            <br>
+    
+            <div class="section">
+                <div class="content">
+                    <div class="c-content">
+                        <p class="c-title"><strong>CAMAYAN</strong></p>
+                        <p class="c-text">Experience a luxurious escapade away from the city and get all-day access to Camayan Beach Resort! Surround yourself with lush rainforests, white-sand beaches, and clear, blue waters... Enjoy thrilling activities such as scuba diving, hiking, horseback riding, snorkeling, and more! Designed for nature lovers, this private estate is an ideal getaway to explore the wild and the sea.</p>
+                    </div>
+                    <div>
+                        <a href="https://www.tripadvisor.com/Tourism-g294255-Palawan_Island_Palawan_Province_Mimaropa-Vacations.html"><img id="p-img" alt="palawan-beach" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/e7/b0/ea/photo0jpg.jpg?w=2200&h=-1&s=1"></a>
+                    </div>
+                    <div class="b-content">
+                        <p class="b-title"><strong>BOHOL</strong></p>
+                        <p class="b-text">Bohol is a province of the Philippines, in the country’s Central Visayas region. It comprises Bohol Island and numerous smaller surrounding islands. Bohol is known for coral reefs and unusual geological formations, notably the Chocolate Hills. On the main island, near the town of Carmen, these 1,200 or so symmetrical mounds turn cocoa-brown in the dry season, contrasting with the surrounding jungle's greenery.</p>
+                    </div>
+                    <div>
+                        <a href="https://www.klook.com/en-US/activity/11497-camayan-beach-resort-day-pass-manila/"><img id="c-img" alt="camayan-beach" src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/xrpowtqw1x8p5tudeibt.webp"></a>
+                    </div>
+                    <div class="p-content">
+                        <p class="p-title"><strong>PALAWAN</strong></p>
+                        <p class="p-text">Palawan is a slice of heaven, a sliver of an island that teems with exotic wildlife, quaint fishing villages, and UNESCO World Heritage Sites. Wave hello to endangered animals at the Calauit Game Preserve and Wildlife Sanctuary or explore the Japanese shipwrecks of Coron Island, regarded as one of the best dive sites in the world. A guided boat tour of the Puerto Princesa Underground River will take your breath away.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://boholcarrental.com.ph/blog/top-10-best-beaches-in-bohol-province-philippines/"><img id="b-img" alt="bohol-beach" src="https://r5t3s4r6.rocketcdn.me/wp-content/uploads/bfi_thumb/top-10-best-beaches-in-bohol-qbes8qtheeqmj13sep2egf17pom82vmg69sqng6pro.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <form style="text-align: center;" action="#top">
+                <button>Back to Top</button>
+            </form>
+    
+            <div class="footer">
+                <p>references: click on images for easy access</p>
+                <p>Raphael. (2023, August 25). Top 10 best beaches in Bohol Province, Philippines. Bohol Car Rental. 
+                    <a href="https://boholcarrental.com.ph/blog/top-10-best-beaches-in-bohol-province-philippines/">https://boholcarrental.com.ph/blog/top-10-best-beaches-in-bohol-province-philippines/</a></p>
+                <p>Tripadvisor. (n.d.). Palawan Island 2024: Best Places to visit - Tripadvisor.
+                    <a href="https://www.tripadvisor.com/Tourism-g294255-Palawan_Island_Palawan_Province_Mimaropa-Vacations.html">https://www.tripadvisor.com/Tourism-g294255-Palawan_Island_Palawan_Province_Mimaropa-Vacations.html</a></p>
+                <p>Travel, K. (n.d.). Camayan Beach Resort Day Pass, Manila, Philippines - Klook United States. Klook Travel. 
+                    <a href="https://www.klook.com/en-US/activity/11497-camayan-beach-resort-day-pass-manila/">https://www.klook.com/en-US/activity/11497-camayan-beach-resort-day-pass-manila/</a></p>
+            </div>    
+        </div>
+    </div>
+    <div class="footer1">
+        <p>thank you for reading ! :3</p>
+    </div>
+</body>
+</html>

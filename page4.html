@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<title>Project</title>
+	<style>
+
+    .main-4{
+      font-family: 'Times New Roman', Times, serif;
+      background-image: linear-gradient(rgba(157, 156, 156, 0.5), rgba(255,255,255,.5)), url(https://i.imgur.com/PhBRZof.jpeg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+        .container{
+            width: 850px;
+            padding: 15px;
+        }
+
+        .li{
+            padding: 5px;
+        }
+
+        nav{
+        background-color: rgb(32, 34, 34);
+        height: auto;
+        }
+
+        #search{
+            width:100%;
+            margin-bottom: 10px;
+        }
+
+        #home{
+            background:rgba(0, 0, 0, 0.6);
+        }
+
+        h1{
+            color: white;
+        }
+
+        h2{
+            color: #fff;
+            margin-left: 23px;
+        }
+
+        p{
+            color: #fff;
+        }
+
+        tr{
+            color: white;
+        }
+
+        th{
+            color: #fff;
+        }
+
+        td{
+            color: white;
+            padding-bottom: 8px;
+        }
+
+        table{
+            border-spacing: 5px;
+            width: 750px;
+            margin-left: 50px;
+        }
+
+        #content{
+            margin: -20px;
+            background:rgba(0, 0, 0, 0.6);
+        }
+
+        img{
+            width: 250px;
+        }
+        
+        #contact{
+            background:rgba(0, 0, 0, 0.6);
+        }
+        
+        #gallery{
+            background:rgba(0, 0, 0, 0.6);
+        }
+
+        p{
+            opacity: 1.0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: rgb(32, 34, 34);
+            color: white;
+        }
+
+        #footer-img{
+            width: 10%;
+        }
+
+    }
+
+    a:hover{
+            opacity: 0.7;
+        }
+
+        #welcome{
+            position: fixed;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0; 
+            margin: auto;
+            height: fit-content;
+        }
+
+        button{
+            width: fit-content;
+            margin: 5px;
+            border-color: #fff;
+            border-radius: 2px;
+        }
+
+        button:hover{
+            opacity: .5;
+        }
+
+        .header {
+            position: sticky;
+            background-color: rgb(255, 211, 255);
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #ff65b2;
+        }
+
+        .search {
+            margin-left: auto; 
+        }
+
+        .text1 {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            z-index: 9999; 
+        }
+
+        .img{
+            width: 200px;
+        }
+
+        .footer1 {
+            background-color: rgb(255, 211, 255);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        .footer1 p {
+            color: #ff65b2;
+        }
+
+	</style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="https://github.com/BrozasAAP" class="navbar-brand"><img src="https://i.imgur.com/4CpUQgm.png" width="50" height="40" alt="logo"></a>
+        </div>
+        <a href="mainpage.html">home</a>
+        <a href="page2.html">first quarter project</a>
+        <a href="page3.html">second quarter project</a>
+        <a href="page4.html">third quarter project</a>
+        <a href="page5.html">what's next?</a>
+        <input class="search" type="search" placeholder="search">
+        <button>go</button>
+    </div>
+
+    <div class="main-4">
+        <nav class="navbar sticky-top navbar-expand-xl">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="https://www.slowdiveofficial.com/"> 
+                 <img src="https://i.imgur.com/5lIjvbt.png" id="brand" style="width: 80px; margin-left: 8px;">
+               </a>
+               <ul class="navbar-nav">
+                   <li class="nav-item"> 
+                     <a class="nav-link" href="#home" style="color: #fff;">home</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#gallery" style="color: #fff;">gallery</a>
+                   </li>
+                   <li class="nav-item dropdown" data-bs-theme="dark">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: #fff;">discography</a> 
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#albums" style="color: #fff;">albums</a></li>
+                       <li><a class="dropdown-item" href="https://open.spotify.com/artist/72X6FHxaShda0XeQw3vbeF" style="color: #fff;">spotify</a></li>
+                     </ul>
+                   </li>
+                 <li class="nav-item">  
+                     <a class="nav-link" href="#contact" style="color: #fff;">contact us</a> 
+                   </li>
+               </ul>
+            </div>
+        </nav>
+           
+          <div class="container-fluid d-flex">
+            <div class="col-xl-9">
+                  <div id="home" class="container mt-4">
+                      <h1>slowdive</h1>
+                          <p>
+                              slowdive (stylized in lowercase) are a british rock band that formed in reading, berkshire, in 1989. the band consists of rachel goswell (vocals, guitars, keyboards), neil halstead (vocals, guitars), christian savill (guitars), nick chaplin (bass), and simon scott (drums, guitars, electronics), all of whom played on the band's debut studio album, just for a day (1991). halstead is the band's primary songwriter.
+                              <br><br>
+                              the band is one of the most prominent within the shoegaze scene, which rose to prominence in the uk during the early 1990s. while the band's second studio album, souvlaki (1993), received mixed reviews upon release, it has since been recognized as one of the best releases of the 1990s and one of the greatest shoegaze albums of all time.[1][2][3][4] the band broke up soon after the release of their third studio album, pygmalion, in 1995, having seen scott, savill and chaplin depart the band prior. the remaining members continued under a more folk and country-influenced direction as mojave 3.
+                              <br><br>
+                              slowdive reunited in 2014 to play the primavera sound festival and released a self-titled studio album in 2017, their first in 22 years. the band's fifth studio album, everything is alive, was released in 2023 and became slowdive's first top ten album in any country, doing so in belgium, germany, the netherlands, new zealand and the united kingdom.
+                          </p>
+                  </div>
+          </div>
+            
+          </div>       
+    
+          <div class="container-fluid d-flex">
+            <div class="col-xl-9">
+                <div id="home" class="container mt-4">
+                  <h1 id="albums">discography</h1>
+                    <h2>studio albums</h2>
+                        <table>
+                          <th>
+                            <tr>
+                              <th>name</th>
+                              <th>details</th>
+                            </tr>
+                          </th>
+                            <tr>
+                              <td>just for a day</td>
+                              <td>released: 2 september 1991 | label: Creation, SBK | format: CD, CS, LP</td>
+                            </tr>
+                            <tr>
+                              <td>souvlaki</td>
+                              <td>released: 1 june 1993 | label: Creation (139), SBK | format: CD, CS, LP</td>
+                            </tr>
+                            <tr>
+                              <td>pygmalion</td>
+                              <td>released: 6 february 1995 | label: Creation | format: CD, LP</td>
+                            </tr>
+                            <tr>
+                              <td>slowdive</td>
+                              <td>released: 5 may 2017 | label: Dead Oceans | format: CD, CS, LP</td>
+                            </tr>
+                            <tr>
+                              <td>everything is alive</td>
+                              <td>Released: 1 september 2023 | label: Dead Oceans | format: CD, CS, LP</td>
+                            </tr>
+                          </tb>
+                        </table>       
+                </div>
+            </div>	
+          </div>
+          
+          <div class="container-fluid d-flex">
+            <div class="col-xl-9">
+                  <div id="gallery" class="container mt-4">
+                      <h1>gallery</h1>
+                          <a href="https://upload.wikimedia.org/wikipedia/commons/f/f3/Slowdive_live_1992.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Slowdive_live_1992.jpg"></a>
+                          <a href="https://i.imgur.com/zdMKc4r.jpeg"><img src="https://i.imgur.com/zdMKc4r.jpeg" class="image ms-4"></a>
+                          <a href="https://i1.sndcdn.com/artworks-000094315457-h1b38h-t500x500.jpg"><img src="https://i1.sndcdn.com/artworks-000094315457-h1b38h-t500x500.jpg" class="image ms-4"></a>
+                          <a href="https://cdn10.bigcommerce.com/s-yhxhf/products/30480/images/134150/PRA096-slowdive_band_mock_5x5__65957.1663283309.600.600.jpg?c=2"><img src="https://cdn10.bigcommerce.com/s-yhxhf/products/30480/images/134150/PRA096-slowdive_band_mock_5x5__65957.1663283309.600.600.jpg?c=2" class="mt-4"></a>
+                          <a href="https://s3.amazonaws.com/quietus_production/images/articles/14357/Slowdive_press_two_1390992026_crop_550x441.jpg"><img src="https://s3.amazonaws.com/quietus_production/images/articles/14357/Slowdive_press_two_1390992026_crop_550x441.jpg" class="ms-4 mt-4"></a>
+                          <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4B9FnSwxuQAC-Bl7RfalmR0b-3ZTgtwW6soGwUn2ScPhVfle6B4O28bH0zaa56iR4aXY&usqp=CAU"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4B9FnSwxuQAC-Bl7RfalmR0b-3ZTgtwW6soGwUn2ScPhVfle6B4O28bH0zaa56iR4aXY&usqp=CAU" class="ms-4 mt-4"></a>
+                  </div>
+              </div>
+          </div>
+         
+          <div class="container-fluid d-flex mb-5">
+            <div class="col-xl-9">
+                  <div id="contact" class="container mt-4">
+                      <h1>contact us</h1>
+                          <ul>
+                            <li style="color: #fff;">email: management@zootmusic.net</li>
+                            <li style="color: #fff;">instagram: <a href="https://www.instagram.com/slowdiveofficial">slowdiveofficial</a></li>
+                            <li style="color:#fff;">twitter: <a href="https://twitter.com/slowdiveband">slowdiveband</a> </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+         
+          <footer>
+            <img src="https://i.imgur.com/5lIjvbt.png" id="footer-img">
+            <br>
+            <small>management@zootmusic.net</small>
+          </footer>
+    </div>
+    <div class="footer1">
+      <p>thank you for reading ! :3</p>
+  </div>
+</body>
+</html>

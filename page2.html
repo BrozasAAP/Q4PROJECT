@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Project</title>
+    <style>
+
+        body {
+            background-color: #EBE6DC;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        button{
+            width: fit-content;
+            margin: 5px;
+            border-color: #fff;
+            border-radius: 2px;
+        }
+
+        li [head] {
+            color: blue;
+            text-decoration: underline;
+           
+        }
+        a:hover{
+            opacity: 0.7;
+        }
+
+        button:hover{
+            opacity: .5;
+        }
+
+        .header-img{
+            width: 100%;
+            position: absolute;
+        }
+
+        .header {
+            position: sticky;
+            background-color: rgb(255, 211, 255);
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #ff65b2;
+        }
+
+        .search {
+            margin-left: auto; 
+        }
+
+        .PROJ-main{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .PROJ-2{
+            font-family: 'Times New Roman', Times, serif;
+            display: none;
+        }
+
+        .PROJ-3{
+            font-family: 'Times New Roman', Times, serif;
+            display: none;
+        }
+
+        .PROJ-4{
+            font-family: 'Times New Roman', Times, serif;
+            display: none;
+        }
+
+        .PROJ-ref{
+            font-family: 'Times New Roman', Times, serif;
+            display: none;
+        }
+
+        .PROJ-Q1{
+            margin-top: 20px;
+        }
+
+        .btn{
+          text-decoration: underline; 
+          color: blue; 
+          padding: 5px;
+        }
+
+        .footer {
+            background-color: rgb(255, 211, 255);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        .footer p {
+            color: #ff65b2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="https://github.com/BrozasAAP" class="navbar-brand"><img src="https://i.imgur.com/4CpUQgm.png" width="50" height="40" alt="logo"></a>
+        </div>
+        <a href="mainpage.html">home</a>
+        <a href="page2.html">first quarter project</a>
+        <a href="page3.html">second quarter project</a>
+        <a href="page4.html">third quarter project</a>
+        <a href="page5.html">what's next?</a>
+        <input class="search" type="search" placeholder="search">
+        <button>go</button>
+    </div>
+    <div class="PROJ-Q1" id="PROJ-Q1">
+        <div class="PROJ-main" id="PROJ-main">
+            <h1>Noli Me Tangere Characters</h1>
+                    <ol>
+                        <li name="head" style="text-decoration: underline; color: blue; padding: 5px;" onclick="loadTwo();">Main Characters</li>
+                            <ul>
+                                <li>Crisostomo Ibarra</li>
+                                <li>Maria Clara</li>
+                            </ul>
+                        <li name="head" style="text-decoration: underline; color: blue; padding: 5px;" onclick="loadThree();">Side Characters</li>
+                            <ul>
+                                <li>Don Rafael Ibarra</li>
+                                <li>Kapitan Tiago</li>
+                                <li>Tiya Isabel</li>
+                                <li>Sisa</li>
+                                <li>Crispin</li>			
+                                <li>Basilio</li>		
+                                <li>Pilosopo Tasyo</li>	
+                            </ul>
+                        <li name="head" style="text-decoration: underline; color: blue; padding: 5px;" onclick="loadFour();">Antagonists</li>
+                            <ul>
+                                <li>Padre Damaso</li>
+                            </ul>
+                        <li name="head" style="text-decoration: underline; color: blue; padding: 5px;" onclick="loadRef();">References</li>
+                    </ol>
+    </div>
+    <div class="PROJ-2" id="PROJ-2">
+            
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <th colspan="3"><h2>MAIN CHARACTERS</h2></th>
+                    </tr>
+                        <tr>
+                            <td><a href="https://noli-me-tangere.fandom.com/wiki/Crisostomo_Ibarra"><img src="https://i.imgur.com/mYAMYbC.png" width="200" alt="Crisostomo Ibarra"></a></td>
+                            <td>Crisostomo Ibarra</td>
+                            <td>
+                                <ul>
+                                    <li>He is an educated Filipino.</li>
+                                    <li>He represents the youth's idealism.</li>
+                                    <li>He is the son of Don Rafael Ibarra.</li>
+                                    <li>He is the love interest of Maria Clara.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://noli-me-tangere.fandom.com/wiki/Maria_Clara"><img src="https://i.imgur.com/df2KSqw.png" width="200" alt="Maria Clara"></a></td>
+                            <td>Maria Clara</td>
+                            <td>
+                                <ul>
+                                    <li>She is a beautiful and moral Filipina.</li>
+                                    <li>She represents purity and innocence.</li>
+                                    <li>She is the daugther of Kapitan Tiago and Pia Alba.</li>
+                                    <li>She is the love interest of Crisostomo Ibarra.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                </table>		
+            
+
+            <br>
+                <small><em>Click on the images for more information.</em></small> <br>
+                <button class="btn" onclick="backToHome();">Back to Home</button> 
+    </div>
+    <div class="PROJ-3" id="PROJ-3">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th colspan="3" id="top"><h2>SIDE CHARACTERS</h2></th>
+                </tr>
+                    <tr>
+                        <td><a href="https://www.personality-database.com/profile/500981/don-rafael-ibarra-noli-me-tngere-el-filibusterismo-mbti-personality-type"><img src="https://static1.personality-database.com/profile_images/eda32dec406440bfb15bb5158dca5f2c.png" width="200" alt="Don Rafael Ibarra"></a></td>
+                        <td>Don Rafael Ibarra</td>
+                        <td>
+                            <ul>
+                                <li>He is a rich and well-respected landowner.</li>
+                                <li>He represents the Filipino elite's want for progress.</li>
+                                <li>He is the father of Crisostomo Ibarra.</li>							
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://noli-me-tangere.fandom.com/wiki/Capitan_Tiago"><img src="https://i.imgur.com/c1iZE8Y.png" width="200" alt="Kapitan Tiago"></a></td>
+                        <td>Kapitan Tiago</td>
+                        <td>
+                            <ul>
+                                <li>He is a wealthy and well-respected Filipino businessman who hosts extravagant parties.</li>
+                                <li>He represents the elite Filipinos who oppress other Filipinos in order to get what they want.</li>
+                                <li>He is the father of Maria Clara.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.personality-database.com/profile/193484/tiya-isabel-noli-me-tngere-el-filibusterismo-mbti-personality-type"><img src="https://static1.personality-database.com/profile_images/90ddb5d32b144f6f8c1ed95da0620ad1.png" width="200" alt="Tiya Isabel"></a></td>
+                        <td>Tiya Isabel</td>
+                        <td>
+                            <ul>
+                                <li>She is a very religious Filipina.</li>
+                                <li>She represents the traditional customs of the Filipinos during the Spanish colonial Period.</li>
+                                <li>She raised Maria Clara.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.personality-database.com/profile/193482/sisa-noli-me-tngere-el-filibusterismo-mbti-personality-type"><img src="https://static1.personality-database.com/profile_images/1f37a68eecd84b44b86e96dee840771b.png" width="200" alt="Sisa"></a></td>
+                        <td>Sisa</td>
+                        <td>
+                            <ul>
+                                <li>She is a poor Filipina.</li>
+                                <li>She represents the poor and oppressed Filipinos during the Spanish colonial period.</li>
+                                <li>She is the mother of Crispin and Basilio.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://noli-me-tangere.fandom.com/wiki/Basilio"><img src="https://i.imgur.com/dYGlwZi.png" width="200" alt="Basilio"></a></td>
+                        <td>Basilio</td>
+                        <td>
+                            <ul>
+                                <li>He is a responsible and clever boy.</li>
+                                <li>He represents the youth's determination during the Spanish colonial period.</li>
+                                <li>He is the son of Sisa and Pedro.</li>
+                                <li>He is the older brother of Crispin.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://noli-me-tangere.fandom.com/wiki/Crispin"><img src="https://i.imgur.com/rDZG2at.png" width="200" alt="Crispin"></a></td>
+                        <td>Crispin</td>
+                        <td>
+                            <ul>
+                                <li>He is a young and quiet boy.</li>
+                                <li>He represents the poor and how oppressed they are by the elite.</li>
+                                <li>He is the son of Sisa and Pedro.</li>
+                                <li>He is the younger brother of Basilio.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://noli-me-tangere.fandom.com/wiki/Pilosopo_Tasio"><img src="https://i.imgur.com/Bcovovs.png" width="200" alt="Pilosopo Tasio"></a></td>
+                        <td>Pilosopo Tasio</td>
+                        <td>
+                            <ul>
+                                <li>He is a wise and philosophical man.</li>
+                                <li>He represents the Filipinos who were against the rule of the Spanish.</li>
+                                <li>He is the mentor of Crisostomo Ibarra.</li>
+                            </ul>
+                        </td>
+                    </tr>
+            </table>		
+        <br>
+        <small><em>Click on the images for more information.</em></small> 
+        <br><br>
+            
+                <div style="display: inline-block;">
+                    <button class="btn" onclick="backToHome();">Back to Home</button>  
+                    <a href="#top">Back to Top</a>                   
+                </div>       
+    </div>
+    <div class="PROJ-4" id="PROJ-4">
+            
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <th colspan="3"><h2>ANTAGONISTS</h2></th>
+                    </tr>
+                        <tr>
+                            <td><a href="https://noli-me-tangere.fandom.com/wiki/Padre_Damaso"><img src="https://i.imgur.com/N7aXrlh.png" width="200" alt="Padre Damaso"></a></td>
+                            <td>Padre Damaso</td>
+                            <td>
+                                <ul>
+                                    <li>He is an Spanish priest.</li>
+                                    <li>He is the main antagonist of Noli Me Tangere.</li>
+                                    <li>He is physically abusive and corrupt.</li>
+                                    <li>He represents the Spanish's abuse and discrimination against the Filipinos.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                </table>		
+            
+
+            <br>
+            <small><em>Click on the images for more information.</em></small> <br>
+            <button class="btn" onclick="backToHome();">Back to Home</button>  
+    </div>
+    <div class="PROJ-ref" id="PROJ-ref">
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <th>REFERENCES</th>
+                    </tr>
+                            <tr>
+                                <td>Rizal, J. (2006). <em> Noli me tangere (Touch me not).</em> Penguin.</td>
+                            </tr>
+                            <tr>
+                                <td>Noli me tangere Character analysis | LitCharts. (n.d.). <em><a href="https://www.litcharts.com/lit/noli-me-tangere/characters">LitCharts.</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.). Crisostomo Ibarra. <em><a href="https://noli-me-tangere.fandom.com/wiki/Crisostomo_Ibarra">Noli Me Tangere Wiki.</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.-b). Maria Clara. <em><a href="https://noli-me-tangere.fandom.com/wiki/Maria_Clara">Noli Me Tangere Wiki.</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Don Rafael Ibarra MBTI Personality type: ENTJ or ENTP? (n.d.). <em><a href="https://www.personality-database.com/profile/500981/don-rafael-ibarra-noli-me-tngere-el-filibusterismo-mbti-personality-type">Personality Database</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.). Capitan Tiago. <em><a href="https://noli-me-tangere.fandom.com/wiki/Capitan_Tiago">Noli Me Tangere Wiki.</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Tiya Isabel MBTI Personality Type: ISFP or ISFJ? (n.d.). <em><a href="https://www.personality-database.com/profile/193484/tiya-isabel-noli-me-tngere-el-filibusterismo-mbti-personality-type">Personality Database</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Sisa MBTI Personality type: ISFJ or ISFP? (n.d.). <em><a href="https://www.personality-database.com/profile/193482/sisa-noli-me-tngere-el-filibusterismo-mbti-personality-type">Personality Database</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.). Basilio. <em><a href="https://noli-me-tangere.fandom.com/wiki/Basilio">Noli Me Tangere Wiki.</a></em> </td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.). Crispin. <em><a href="https://noli-me-tangere.fandom.com/wiki/Crispin">Noli Me Tangere Wiki.</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.). Pilosopo Tasio. <em><a href="https://noli-me-tangere.fandom.com/wiki/Pilosopo_Tasio">Noli Me Tangere Wiki.</a></em></td>
+                            </tr>
+                            <tr>
+                                <td>Wiki, C. T. N. M. T. (n.d.). Padre Damaso. <em><a href="https://noli-me-tangere.fandom.com/wiki/Padre_Damaso">Noli Me Tangere Wiki.</a></em></td>
+                            </tr>
+                    </table>
+                <br>
+                <button class="btn" onclick="backToHome();">Back to Home</button>
+    </div>
+   </div>
+        <script>
+            function loadTwo(){
+                document.getElementById("PROJ-2").style.display = "block";
+                document.getElementById("PROJ-main").style.display = "none";
+            }
+
+            function loadThree(){
+                document.getElementById("PROJ-3").style.display = "block";
+                document.getElementById("PROJ-main").style.display = "none";
+            }
+
+            function loadFour(){
+                document.getElementById("PROJ-4").style.display = "block";
+                document.getElementById("PROJ-main").style.display = "none";
+            }
+
+            function loadRef(){
+                document.getElementById("PROJ-ref").style.display = "block";
+                document.getElementById("PROJ-main").style.display = "none";
+            }
+
+            function backToHome(){
+                document.getElementById("PROJ-2").style.display = "none";
+                document.getElementById("PROJ-3").style.display = "none";
+                document.getElementById("PROJ-4").style.display = "none";
+                document.getElementById("PROJ-ref").style.display = "none";
+                document.getElementById("PROJ-main").style.display = "block";
+            }
+
+            
+        </script>
+    <div class="footer">
+        <p>thank you for reading ! :3</p>
+    </div>
+</body>
+</html>
